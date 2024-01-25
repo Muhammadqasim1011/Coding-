@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Borders</title>
+    <style>
+        table,th, td {
+            border: 3px solid #085555;
+            text-align: center;
+            font-size: xx-large;
+            padding: 10px;
+            border-collapse: collapse;
+            border-radius: 10px;
+            border-style: inset;
+        }
+        th,td {
+            background-color: #96D4D4;
+            border-color: #085555;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>HTML Table Borders</h1>
+    <p> HTML tables can have borders of different styles and shapes.
+    <h2>How To Add a Border</h2>
+    To add a border, use the CSS border property on table, th, and td elements: <br>
+    <h2>Collapsed Table Borders</h2>
+    To avoid having double borders like in the example above, set the CSS border-collapse property to collapse. <br>
+    This will make the borders collapse into a single border: <br>
+    <h2>Round Table Borders</h2>
+    With the border-radius property, the borders get rounded corners: <br>
+    Skip the border around the table by leaving out table from the css selector: <br>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>Qasim</td>
+            <td>20</td>
+            <td>Peshawer</td>
+        </tr>
+        <tr>
+            <td>Muzzammil</td>
+            <td>22</td>
+            <td>Peshawer</td>
+        </tr>
+    </table>
+    </p>
+</body>
+
+</html>
