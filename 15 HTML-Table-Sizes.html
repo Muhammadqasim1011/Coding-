@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Sizes</title>
+    <style>
+            body{
+                color: rgb(255, 255, 255);
+                font-size: larger;
+                padding: 2px;
+                margin: 2px;
+                font-family: 'Times New Roman', Times, serif;
+                background-color: rgb(0, 85, 255);
+            }
+            h1,h2{
+                text-decoration: underline;
+
+            }
+
+            table,th,td{
+                border: 2px solid rgb(255, 255, 255);
+                text-align: center;
+                border-collapse: collapse;
+                padding: 10px;
+               
+            }
+            table{
+                width: 70%;
+                margin: auto;
+            }
+            th,td{
+                background-color: rgb(24, 0, 203);
+            }
+
+    </style>
+</head>
+<body>
+    <h1>HTML Table Sizes</h1>
+    <p>
+        HTML tables can have different sizes for each column, row or the entire table. <br>
+        Use the style attribute with the width or height properties to specify the size of a table, row or column. <br>
+        <h2>HTML Table Width</h2>
+        To set the width of a table, add the style attribute to the <b>Table</b> element: <br>
+        <b>Note:</b> Using a percentage as the size unit for a width means how wide will this element be compared to its parent element, which in this case is the <b>body</b> element. <br>
+        <h2>HTML Table Column Width</h2>
+        To set the size of a specific column, add the style attribute on a <b>th</b> or <b>td</b> element: <br>
+        <h2>HTML Table Row Height</h2>
+        To set the height of a specific row, add the style attribute on a table row element: <br>
+    </p>
+    <table>
+        <tr>
+            <th style="width: 40%;">Name</th>
+            <th style="width: 10%;">Age</th>
+            <th style="width: 40%;">Address</th>
+        </tr>
+        <tr>
+            <td style=" height: 80px;">Qasim</td>
+            <td>20</td>
+            <td>Peshawer</td>
+        </tr>
+        <tr>
+            <td>Muzzammil</td>
+            <td>22</td>
+            <td>Peshawer</td>
+        </tr>
+    </table>
+</body>
+</html>
