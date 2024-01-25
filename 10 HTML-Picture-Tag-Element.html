@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>HTML Picture Tag Element</h1>
+    <p>he HTML <b>picture</b> element allows you to display different pictures for different devices or screen sizes. <br>
+    <h2>The HTML <b>Picture</b> Element</h2>
+        The HTML <b>picture</b> element gives web developers more flexibility in specifying image resources. <br>
+        The <b>picture</b>element contains one or more <b>source</b> elements, each referring to different images through the <b>srcset</b> attribute. This way the browser can choose the image that best fits the current view and/or device. <br>
+        Each <b>source</b> element has a media attribute that defines when the image is the most suitable. <br>
+    <h3>Example</h3>
+    how different images for different screen sizes: <br>
+    <picture>
+        <source media="(min-width: 560px)" srcset="https://cdn.pixabay.com/photo/2020/05/25/17/21/link-5219567_640.jpg" sizes="(min-width: 650px) 100px, 50px">
+        <source media="(min-width: 465px)" srcset="https://cdn.pixabay.com/photo/2020/05/31/16/53/bookmarks-5243253_640.jpg" sizes="(min-width: 465px) 100px, 50px">
+        <img src="https://cdn.pixabay.com/photo/2020/05/31/16/53/bookmarks-5243253_640.jpg" style="width: 100px; height: 100px;" alt="Responsive Image">
+      </picture><br>      
+      Note: Always specify an <img> element as the last child element of the <picture> element. The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags match <br>
+
+    </p>
+
+</body>
+
+</html>

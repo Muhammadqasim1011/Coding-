@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS BASIC</title>
+    <style>
+        .h1 {
+            color: antiquewhite;
+            background-color: rgb(41, 41, 41);
+            border: 4px dashed darkcyan;
+            border-radius: 17px;
+            text-align: center;
+        }
+
+        .p1 {
+            color: rgb(177, 254, 229);
+            background-color: black;
+        }
+
+        .p11 {
+            color: antiquewhite;
+            background-color: tomato;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            word-spacing: 1px;
+            text-align: left;
+            padding: 10px;
+        }
+
+        .h11 {
+            color: antiquewhite;
+            background-color: black;
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <p>CSS stands for Cascading Style Sheets. CSS saves a lot of work. It can control the layout of multiple web pages
+        all at once.</p>
+    <h3>What is CSS?</h3>
+    <blockquote cite="https://www.w3schools.com/html/html_css.asp">
+        Cascading Style Sheets <abbr title="Cascading Style Sheets">(CSS)</abbr> is used to format the layout of a
+        webpage. With CSS, you can control the color, font, the size of text, the spacing between elements, how elements
+        are
+        positioned and laid out, what background images or background colors are to be used, different displays for
+        different devices and screen sizes, and much more!
+    </blockquote>
+    <p>
+    <h4>Tip:</h4> The word cascading means that a style applied to a parent element will also apply to all children
+    elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs, and other
+    text elements within the body will also get the same color (unless you specify something else)!</p>
+    <h4>Using CSS</h4>
+    <p>CSS can be added to HTML documents in 3 ways: </p>
+    <ul>
+        <li>Inline - by using the style attribute inside HTML elements</li>
+        <li>Internal - by using a <b>"style"</b> element in the <b>"head"</b> section</li>
+        <li>External - by using a <b>"link"</b> element to link to an external CSS file</li>
+    </ul>
+    <h5 style="letter-spacing: 3px; color: antiquewhite; background-color: tomato;"><b>Inline CSS Example</b></h5>
+    <p style="color: blue; background-color: aqua;">This text is Blue & background is aqua.</p>
+    <br>
+    <h5 class="h11"><b>Internal CSS and its Example</b></h5>
+    <p class="p11">An internal CSS is used to define a style for a single HTML page.
+
+        An internal CSS is defined in the head section of an HTML page, within a style element.
+
+        The following example sets the text color of ALL the h1 elements on that page to blue, and the text color of ALL
+        the p elements to red. In addition, the page will be displayed with a powderblue background color:
+
+        Example</p>
+    <h1 class="h1">This is a heading</h1>
+    <p class="p1">This is a paragraph.</p>
+    <br>
+    <!--For fitting the in background and bordor     width: fit-content; height:fit-content;-->
+    <h2 style="padding: 10px; border: 2px solid tomato; width: fit-content; height: fit-content;background-color: tomato;color: aliceblue;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">PADDING & MARGIN</h2>
+    <p style="padding: 20px ; border: 4px solid tomato; border-radius: 20px; text-align: center; font-size: x-large;color: antiquewhite;background-color: darkcyan; margin: 10px 200px;">Hello!</p>
+    <p style="padding: 30px ; border: 4px solid tomato; border-radius: 20px; text-align: center; font-size: x-large;color: antiquewhite;background-color: darkcyan;margin: 10px 100px;">Hello!</p>
+    <p style="padding: 40px ; border: 4px solid tomato; border-radius: 20px; text-align: center; font-size: x-large;color: antiquewhite;background-color: darkcyan;margin: 10px 50px ;">Hello!</p>
+    
+
+
+
+</body>
+
+</html>

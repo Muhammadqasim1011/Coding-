@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Image Maps</h1>
+        <p>The HTML <b>map</b> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <b>area</b> tags.
+        Try to click on the computer, phone, or the cup of coffee in the image below: <br>        
+        The image is inserted using the <b>img</b> tag. The only difference from other images is that you must add a <b>usemap</b> attribute: <br>
+        The <b>usemap</b> value starts with a hash tag # followed by the name of the image map, and is used to create a relationship between the image and the image map. <br>
+        <h2>Create Image Map</h2>
+        Then, add a <b>map</b> element.The <b>map</b> element is used to create an image map, and is linked to the image by using the required <b>name</b> attribute: <br>
+        <b>map name="workmap" map</b><br>
+        <h2>The Areas</h2>
+        Then, add the clickable areas.A clickable area is defined using an <b>area</b> element. <br>
+        <h3>Shape</h3>
+        You must define the shape of the clickable area, and you can choose one of these values: <br>
+        <ul>
+            <li><b>rect</b> - defines a rectangular region</li>
+            <li><b>circle</b> - defines a circular region</li>
+            <li><b>poly</b> - defines a polygonal region</li>
+            <li><b>default</b> - defines the entire region</li>
+        </ul>
+        You must also define some coordinates to be able to place the clickable area onto the image. <br>
+        <h3>Shape="rect"</h3>
+        The coordinates for shape="rect" come in pairs, one for the x-axis and one for the y-axis.
+        So, the coordinates <b>34,44</b> is located 34 pixels from the left margin and 44 pixels from the top: <br>
+        The coordinates <b>270,350</b> is located 270 pixels from the left margin and 350 pixels from the top: <br>
+        Now we have enough data to create a clickable rectangular area: <br>
+        <h3>Image Map and JavaScript</h3>
+        A clickable area can also trigger a JavaScript function.
+        Add a click event to the <area> element to execute a JavaScript function: <br>
+        Here, we use the onclick attribute to execute a JavaScript function when the area is clicked: <br>
+
+    
+        </p>
+        <img src="https://www.w3schools.com/html/workplace.jpg" alt="Laptop wala" usemap="#map1">
+        <map name="map1">
+            <area onclick="myFunction1()" shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.britannica.com/technology/computer" target="_blank">
+            <area onclick="myFunction2()" shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.vivo.com/pk/products" target="_blank">
+            <area onclick="myFunction3()" shape="circle" coords="337,300,44" alt="Coffee" href="https://en.wikipedia.org/wiki/Coffee" target="_blank">
+        </map>
+
+     
+<img src="download.jpg" usemap="#map2">
+
+<map name="map2">
+    <area onclick="myFunction4()" target="_blank" alt="CSS Course" title="CSS Course" href="https://www.w3schools.com/css/default.asp" coords="23,52,33,166,130,165,138,52,113,41,110,17,47,18,49,38" shape="poly">
+    <area onclick="myFunction5()" target="_blank" alt="HTML Course" title="HTML Course" href="https://www.w3schools.com/html/default.asp" coords="162,52,172,167,271,166,279,53,269,40,257,17,174,19,174,42" shape="poly">
+</map>
+
+
+<script>
+    function myFunction1() {
+      alert("You clicked the Computer!");
+    }
+    function myFunction2() {
+      alert("You clicked the Phone!");
+    }
+    function myFunction3() {
+      alert("You clicked the Coffee cup!");
+    }
+    function myFunction4() {
+      alert("You clicked the CSS full Course!");
+    }
+    function myFunction5() {
+      alert("You clicked the HTML full Course!");
+    }
+    </script>
+</body>
+</html>
