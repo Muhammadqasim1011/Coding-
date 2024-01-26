@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Headers</title>
+    <style>
+        body {
+            color: rgb(255, 255, 255);
+            font-size: larger;
+            padding: 8px;
+            margin: 4px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(0, 85, 255);
+        }
+
+        h1,
+        h2 {
+            text-decoration: underline;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid antiquewhite;
+            border-collapse: collapse;
+            margin-top: 4px;
+            padding: 0px 4.9px ;
+        }
+
+        th,
+        td {
+            height: 24px;
+            width: 77px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Table Headers</h1>
+    <p>
+        HTML tables can have headers for each column or row, or for many columns/rows. <br>
+    <table>
+        <tr>
+            <th>Emil</th>
+            <th>TOBIAS</th>
+            <th>LINUS</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>8:00</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>9:00</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>10:00</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11:00</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>12:00</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>13:00</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td></td>
+            <td>MON</td>
+            <td>TUE</td>
+            <td>WED</td>
+            <td>THU</td>
+            <td>FRI</td>
+        </tr>
+        <tr>
+            <td>8:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>9:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>10:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>12:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>13:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <table>
+        <tr style="text-align: center;">
+            <td colspan="6">DECEMBER</td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <h2>HTML Table Headers</h2>
+    Table headers are defined with th elements. Each th element represents a table cell. <br>
+    <table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table>
+      <h2>Vertical Table Headers</h2>
+      To use the first column as table headers, define the first cell in each row as a <b>th</b> element: br
+      <table>
+        <tr>
+          <th>Firstname</th>
+          <td>Jill</td>
+          <td>Eve</td>
+        </tr>
+        <tr>
+          <th>Lastname</th>
+          <td>Smith</td>
+          <td>Jackson</td>
+        </tr>
+        <tr>
+          <th>Age</th>
+          <td>94</td>
+          <td>50</td>
+        </tr>
+      </table>
+      <h2>Align Table Headers</h2>
+      <b style="color: rgb(255, 170, 58);">By default, table headers are bold and centered:</b>
+      To left-align the table headers, use the CSS text-align property:
+      <table>
+        <tr style="text-align: left;">
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table>
+      <h2></h2>
+      You can have a header that spans over two or more columns. <br>
+      To do this, use the colspan attribute on the <b>th</b> element: <br>
+      <table>
+        <tr>
+          <th colspan="2">Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table>
+      <h2>Table Caption</h2>
+      You can add a caption that serves as a heading for the entire table. <br>
+      To add a caption to a table, use the <b>caption</b> tag: <br>
+      <b>Note:</b> The <b>caption</b> tag should be inserted immediately after the <b>table</b> tag. <br>
+      <table style="width:100%">
+        <caption>Monthly savings</caption>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>$50</td>
+        </tr>
+      </table>
+    </p>
+</body>
+
+</html>
