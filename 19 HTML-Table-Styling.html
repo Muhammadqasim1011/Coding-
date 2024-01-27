@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: larger;
+        }
+
+        .t1 table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: auto;
+            margin-bottom: 10px;
+
+        }
+
+        .t1 td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+
+        }
+
+        /* Apply styles to even rows */
+        .t1 tr:nth-child(odd) {
+            background-color: #000000;
+            color: white;
+        }
+
+        .t2 table {
+            border-collapse: collapse;
+            width: 70%;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        .t2 td {
+            border: 2px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .t2 tr:nth-child(even) {
+            background-color: #000000;
+            color: white;
+        }
+
+        .t3 table {
+            border-collapse: collapse;
+            width: 70%;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        .t3 td {
+            border: 2px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .t3 td:nth-child(even) {
+            background-color: #000000;
+            color: white;
+        }
+
+        .t4 table {
+            border-collapse: collapse;
+            width: 70%;
+            margin: auto;
+        }
+
+        .t4 td {
+            border: 2px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .t4 td:nth-child(odd) {
+            background-color: #000000;
+            color: white;
+        }
+
+        .t5 table {
+            border-collapse: collapse;
+            width: 70%;
+            margin: auto;
+        }
+
+        .t5 td {
+            border: 2px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .t5 td:nth-child(odd),
+        .t5 tr:nth-child(odd) {
+            background-color: rgba(150, 212, 212, 0.26);
+        }
+
+        .t6 table {
+            border-collapse: collapse;
+            width: 70%;
+            margin: auto;
+        }
+
+        .t6 td {
+            border: 2px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .t6 td:nth-child(even),
+        .t6 tr:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.256);
+        }
+
+        .t7 table{
+            width: 70%;
+            margin: auto;
+        }
+        .t7 td{
+            border-bottom: 2px solid #ddd;
+            text-align: center;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Table Styling</h1>
+    <p>
+        Use CSS to make your tables look better.
+    <h2>HTML Table - Zebra Stripes</h2>
+    If you add a background color on every other table row, you will get a nice zebra stripes effect. <br>
+    To style every other table row element, use the :nth-child(even) selector like this: <br>
+    <b>Note:</b> If you use (odd) instead of (even), the styling will occur on row 1,3,5 etc. instead of 2,4,6 etc.
+    <dev class="t1">
+        <table>
+            <caption>ODD</caption>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </dev>
+    <dev class="t2">
+        <table>
+            <caption>EVEN</caption>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </dev>
+    <h2>HTML Table - Vertical Zebra Stripes</h2>
+    To make vertical zebra stripes, style every other column, instead of every other row. <br>
+    Set the :nth-child(even) for table data elements like this: <br>
+    <b>Note:</b> Put the :nth-child() selector on both th and td elements if you want to have the styling on both
+    headers and regular table cells.
+    <dev class="t3">
+        <table>
+            <caption>EVEN</caption>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </dev>
+    <dev class="t4">
+        <table>
+            <caption>ODD</caption>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </dev>
+    <h2>Combine Vertical and Horizontal Zebra Stripes</h2>
+    You can combine the styling from the two examples above and you will have stripes on every other row and every other
+    column. <br>
+    If you use a transparent color you will get an overlapping effect. <br>
+    Use an rgba() color to specify the transparency of the color:
+    <dev class="t5">
+        <table>
+            <caption>odd both rows & columns</caption>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </dev>
+    <dev class="t6">
+        <table>
+            <caption>Even both rows & columns</caption>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </dev>
+    <h2>Horizontal Dividers</h2>
+    If you specify borders only at the bottom of each table row, you will have a table with horizontal dividers. <br>
+    Add the border-bottom property to all tr elements to get horizontal dividers:
+    <dev class="t7">
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Savings</th> 
+            </tr> 
+            <tr>
+                <td>peter</td>
+                <td>Griffin</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Lois</td>
+                <td>Griffin</td>
+                <td>$170</td>
+            </tr>
+            <tr>
+                <td>Joe</td>
+                <td>Swanson</td>
+                <td>$300</td>
+            </tr>
+        </table>
+    </dev>
+    </p>
+</body>
+
+</html>

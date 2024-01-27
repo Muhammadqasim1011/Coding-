@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Padding & Spacing</title>
+    <style>
+        body {
+            color: white;
+            background-color: rgb(170, 79, 0);
+            margin: 4px;
+            padding: 4px;
+            font-family: sans-serif;
+            font-size: larger;
+        }
+
+        h1,
+        h2 {
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid white;
+        }
+
+        th,
+        td {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Table Padding & Spacing</h1>
+    <p>
+        HTML tables can adjust the padding inside the cells, and also the space between the cells. <br>
+        <h2>HTML Table - Cell Padding</h2>
+        Cell padding is the space between the cell edges and the cell content. <br>
+        By default the padding is set to 0. <br>
+        To add padding on table cells, use the CSS padding property: <br>
+        To add padding only above the content, use the padding-top property. <br>
+        And the others sides with the padding-bottom, padding-left, and padding-right properties: <br>    
+    <table>
+        <caption>With Padding</caption>
+        <tr>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+        </tr>
+        <tr>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+        </tr>
+        <tr>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+        </tr>
+    </table>
+    <h2>HTML Table - Cell Spacing</h2>
+    Cell spacing is the space between each cell. <br>
+    By default the space is set to 2 pixels. <br>
+    To change the space between table cells, use the CSS border-spacing property on the table element: <br>
+    <table style="border-spacing: 30px;">
+        <caption>With Padding & Spaceing</caption>
+        <tr>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+        </tr>
+        <tr>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+        </tr>
+        <tr>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+        </tr>
+    </table>
+   </p>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Colspan & Rowspan</title>
+    <style>
+        body{
+            color: white;
+            background-color: brown;
+            font-family: sans-serif;
+            font-size: larger;
+        }
+       table,td,th{
+        border: 2px solid white;
+        border-collapse: collapse;
+        margin-bottom: 8px;
+       }
+       .t1 td, .t1 th{
+        padding: 0px 4px;
+        background-color: rgb(130, 36, 36);
+       }
+    </style>
+</head>
+<body>
+    <h1>HTML Table Colspan & Rowspan</h1>
+    <p>HTML tables can have cells that span over multiple rows and/or columns. 
+    <h2>HTML Table - Colspan</h2>        
+    To make a cell span over multiple columns, use the colspan attribute: <br>
+    <b style="color: black;">Note:</b> The value of the colspan attribute represents the number of columns to span. 
+    <dev  class="t1">
+    <table>
+        <tr>
+          <th colspan="2">Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>43</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>57</td>
+        </tr>
+      </table>
+      </dev>
+      <table>
+        <tr>
+          <th colspan="2">Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>43</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>57</td>
+        </tr>
+      </table>
+      <h2>HTML Table - Rowspan</h2>
+      To make a cell span over multiple rows, use the rowspan attribute: <br>
+      <b style="color: black;">Note:</b> The value of the rowspan attribute represents the number of rows to span.
+     <table>
+        <tr>
+          <th>Name</th>
+          <td>Jill</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Phone</th>
+          <td>555-1234</td>
+        </tr>
+        <tr>
+          <td>555-8745</td>
+      </tr>
+      </table>
+
+    </p>
+</body>
+</html>
