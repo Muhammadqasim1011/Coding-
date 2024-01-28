@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Colgroup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 80%;
+            margin: auto;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        .t1 {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .t1 th {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .t1 td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Table Colgroup</h1>
+    <p>The <b>colgroup</b> element is used to style specific columns of a table. <br>
+        If you want to style the two first columns of a table, use the <b>colgroup</b> and <b>col</b> elements.
+        The <b>colgroup</b> element should be used as a container for the column specifications. <br>
+        Each group is specified with a <b>col</b> element.
+        The span attribute specifies how many columns that get the style. <br>
+        The style attribute specifies the style to give the columns. <br>
+        <b>Note:</b> The <b>colgroup</b> tag must be a child of a <b>table</b> element and should be placed before any
+        other table elements, like <b>thead</b>,<b>tr</b>, <b>td</b> etc., but after the <b>caption</b> element, if
+        present. <br>
+    <table class="t1">
+        <colgroup>
+            <col span="3" style="background-color: #D6EEEE">
+        </colgroup>
+        <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+    </table>
+    <h2>Legal CSS Properties</h2>
+    There is only a very limited selection of CSS properties that are allowed to be used in the colgroup: <br>
+    width property,<br>
+    visibility property,<br>
+    background properties,<br>
+    border properties, <br>
+    All other CSS properties will have no effect on your tables. <br>
+    <table class="t1">
+        <colgroup>
+            <col span="4" style="border:2px solid #01ffff; background-color: rgba(49, 40, 172, 0.591);">
+        </colgroup>
+        <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+    </table>
+    <h2>Multiple Col Elements</h2>
+    If you want to style more columns with different styles, use more <b>col</b> elements inside the <b>colgroup</b>:
+    <table class="t1">
+        <colgroup>
+            <col span="2" style="background-color: #D6EEEE; border: 2px solid tomato;">
+            <col span="3" style="background-color: pink; border: 2px solid #D6EEEE;">
+            <col span="2" style="background-color: tomato; border: 2px solid pink;">
+        </colgroup>
+        <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+    </table>
+    <h2>Empty Colgroups</h2>
+    If you want to style columns in the middle of a table, insert a "empty" <b>col</b> element (with no styles) for the
+    columns before: <br>
+    <table class="t1">
+        <colgroup>
+            <col span="3">
+            <col span="2" style="background-color: pink">
+        </colgroup>
+        <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+    </table>
+    <h2>Hide Columns</h2>
+    You can hide columns with the visibility: collapse property: <br>
+    <table class="t1">
+        <colgroup>
+            <col span="2">
+            <col span="3" style="visibility: collapse">
+        </colgroup>
+        <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+    </table>
+    </p>
+
+</body>
+
+</html>
