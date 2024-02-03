@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Block and Inline Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2ebff;
+            margin-left: 10px;
+            padding: 0;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #0064d0;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        table,
+        tr,
+        td {
+            width: 70%;
+            border: 2px solid rgb(25, 25, 255);
+            border-collapse: collapse;
+            padding: 7px;
+            margin-top: 17px;
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        li {
+            width: calc(12% - 20px);
+            /* Adjusted width to consider margin and box-sizing */
+            margin-bottom: 20px;
+            padding: 15px;
+            color: rgb(165, 50, 42);
+            border: 1px solid gray;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        @media screen and (max-width: 1720px) {
+            li {
+                width: calc(14% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 1470px) {
+            li {
+                width: calc(17% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 1212px) {
+            li {
+                width: calc(20% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 1037px) {
+            li {
+                width: calc(25% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 834px) {
+            li {
+                width: calc(33% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 634px) {
+            li {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            li {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Block and Inline Elements</h1>
+    <p>Every HTML element has a default display value, depending on what type of element it is.</p>
+    <p>The two most common display values are block and inline.</p>
+    <h2>Block-level Elements</h2>
+    <p>A block-level element always starts on a new line, and the browsers automatically add some space (a margin)
+        before and after the element.</p>
+    <p>A block-level element always takes up the full width available (stretches out to the left and right as far as it
+        can).</p>
+    <p>Two commonly used block elements are: <b>p</b> and <b>div</b>.</p>
+    <p>The <b>p</b> element defines a paragraph in an HTML document.</p>
+    <p>The <b>div</b> element defines a division or a section in an HTML document.</p>
+    <table>
+        <tr>
+            <td>The <b>p</b> element is a block-level element.</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>The <b>div</b> element is a block-level element.</td>
+        </tr>
+    </table>
+    <h3>Example</h3>
+    <p>Hello World</p>
+    <div>Hello World</div>
+    <h3>Here are the block-level elements in HTML:</h3>
+    <ol>
+        <li>Address</li>
+        <li>Article</li>
+        <li>Aside</li>
+        <li>Blockquote</li>
+        <li>Canvas</li>
+        <li>Definition Description</li>
+        <li>Div</li>
+        <li>Definition List</li>
+        <li>Definition Term</li>
+        <li>Fieldset</li>
+        <li>Figure Caption</li>
+        <li>Figure</li>
+        <li>Footer</li>
+        <li>Form</li>
+        <li>Heading 1-6</li>
+        <li>Header</li>
+        <li>Horizontal Rule</li>
+        <li>List Item</li>
+        <li>Main</li>
+        <li>Navigation</li>
+        <li>No Script</li>
+        <li>Ordered List</li>
+        <li>Paragraph</li>
+        <li>Preformatted</li>
+        <li>Section</li>
+        <li>Table</li>
+        <li>Table Footer</li>
+        <li>Unordered List</li>
+        <li>Video</li>
+    </ol>
+
+    <h2>Inline Elements</h2>
+    <p>An inline element does not start on a new line.</p>
+    <p>An inline element only takes up as much width as necessary.</p>
+    <p> This is <span style="border: 1px solid green; padding: 7px;">a <b>span</b> element inside</span> a paragraph.</p>
+    <h3>Here are the inline elements in HTML:</h3>
+    <ol>
+        <li>&lt;a&gt;</li>
+        <li>&lt;abbr&gt;</li>
+        <li>&lt;acronym&gt;</li>
+        <li>&lt;b&gt;</li>
+        <li>&lt;bdo&gt;</li>
+        <li>&lt;big&gt;</li>
+        <li>&lt;br&gt;</li>
+        <li>&lt;button&gt;</li>
+        <li>&lt;cite&gt;</li>
+        <li>&lt;code&gt;</li>
+        <li>&lt;dfn&gt;</li>
+        <li>&lt;em&gt;</li>
+        <li>&lt;i&gt;</li>
+        <li>&lt;img&gt;</li>
+        <li>&lt;input&gt;</li>
+        <li>&lt;kbd&gt;</li>
+        <li>&lt;label&gt;</li>
+        <li>&lt;map&gt;</li>
+        <li>&lt;object&gt;</li>
+        <li>&lt;output&gt;</li>
+        <li>&lt;q&gt;</li>
+        <li>&lt;samp&gt;</li>
+        <li>&lt;script&gt;</li>
+        <li>&lt;select&gt;</li>
+        <li>&lt;small&gt;</li>
+        <li>&lt;span&gt;</li>
+        <li>&lt;strong&gt;</li>
+        <li>&lt;sub&gt;</li>
+        <li>&lt;sup&gt;</li>
+        <li>&lt;textarea&gt;</li>
+        <li>&lt;time&gt;</li>
+        <li>&lt;tt&gt;</li>
+        <li>&lt;var&gt;</li>
+    </ol>
+
+    <h2>The Div Element</h2>
+    <p>The <b>div</b> element is often used as a container for other HTML elements.</p>
+    <p>The <b>div</b> element has no required attributes, but style, class and id are common.</p>
+        <p>When used together with CSS, the <b>div</b> element can be used to style blocks of content:</p>
+            
+        <div style="background-color:#012246; color:white ;padding:20px; ">
+            <h2>London</h2>
+            <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+          </div>
+
+    <h2>The Span Element</h2>
+        <p>The <b>span</b> element is an inline container used to mark up a part of a text, or a part of a document.</p>
+        <p>The <b>span</b> element has no required attributes, but style, class and id are common.</p>
+        <p>When used together with CSS, the <b>span</b> element can be used to style parts of the text:</p>    
+        <p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:rgb(57, 85, 7);font-weight:bold;">dark green</span> eyes.</p>
+</body>
+
+</html>
