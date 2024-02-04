@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2ebff;
+    margin-left: 10px;
+    padding: 0;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+h1,
+h2,
+h3 {
+    color: #0064d0;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.div1 {
+    background-color: aquamarine;
+}
+
+.div2 {
+    width: 300px;
+    margin: auto;
+    background-color: rgb(4, 39, 122);
+    color: white;
+    padding: 10px;
+}
+
+.div3 {
+    width: 470px;
+    margin: auto;
+}
+
+.div4 {
+    background-color: rgb(234, 210, 174);
+}
+
+.div11 {
+    background-color: rgb(249, 189, 210);
+}
+
+.div12 {
+    background-color: rgb(181, 196, 250);
+}
+
+.mycontainer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.mycontainer div {
+    /* float: left; */
+    width: 33%;
+    margin-bottom: 40px;
+    padding: 10px;
+    margin: 0px 4px 40px 4px;
+}
+
+.div13 {
+    width: 100%;
+    margin: auto;
+    /* display: flex; */
+}
+
+.div13 div {
+    width: 30%;
+    display: inline-block;
+}
+
+.mycontainer-2 {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line */
+    justify-content: space-between;
+}
+
+.mycontainer-2 div {
+    width: calc(23% - 10px);
+    /* Approximately 25% width for four boxes with some margin */
+    margin: 5px;
+    /* Add margin between the boxes */
+    background-color: #FFF4A3;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .mycontainer-2 div {
+        width: calc(30% - 10px);
+        /* Adjust width for three boxes in a row */
+    }
+}
+
+.mycontainer-grid {
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23% ;
+    gap: 10px; /* Add some gap between grid items */
+    justify-content: center;
+}
+
+.mycontainer-grid div {
+    background-color: #FFF4A3;
+    padding: 10px;
+    
+}
+/* 
+@media screen and (max-width: 1460px) {
+    .mycontainer div {
+        width: 17%;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .mycontainer div {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mycontainer div {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .mycontainer div {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .mycontainer div {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .mycontainer div {
+        width: 100%;
+    }
+} */
