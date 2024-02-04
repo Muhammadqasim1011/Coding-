@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Div Element</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2ebff;
+            margin-left: 10px;
+            padding: 0;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #0064d0;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        .div1 {
+            background-color: aquamarine;
+        }
+
+        .div2 {
+            width: 300px;
+            margin: auto;
+            background-color: rgb(4, 39, 122);
+            color: white;
+            padding: 10px;
+        }
+
+        .div3 {
+            width: 470px;
+            margin: auto;
+        }
+
+        .div4 {
+            background-color: rgb(234, 210, 174);
+        }
+
+        .div11 {
+            background-color: rgb(249, 189, 210);
+        }
+
+        .div12 {
+            background-color: rgb(181, 196, 250);
+        }
+
+        .mycontainer {
+            width: 90%;
+            margin: auto;
+            display: flex;
+        }
+
+        .mycontainer div {
+            /* float: left; */
+            width: 33%;
+            margin-bottom: 40px;
+            padding: 10px;
+            margin: 0px 4px 40px 4px;
+        }
+
+        .div13 {
+            width: 100%;
+            margin: auto;
+            /* display: flex; */
+        }
+
+        .div13 div {
+            width: 30%;
+            display: inline-block;
+        }
+
+        .mycontainer-2 {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allow items to wrap to the next line */
+            justify-content: space-between;
+        }
+
+        .mycontainer-2 div {
+            width: calc(23% - 10px);
+            /* Approximately 25% width for four boxes with some margin */
+            margin: 5px;
+            /* Add margin between the boxes */
+            background-color: #FFF4A3;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .mycontainer-2 div {
+                width: calc(30% - 10px);
+                /* Adjust width for three boxes in a row */
+            }
+        }
+
+        .mycontainer-grid {
+            display: grid;
+            grid-template-columns: 23% 23% 23% 23% ;
+            gap: 10px; /* Add some gap between grid items */
+            justify-content: center;
+        }
+
+        .mycontainer-grid div {
+            background-color: #FFF4A3;
+            padding: 10px;
+            
+        }
+        /* 
+        @media screen and (max-width: 1460px) {
+            .mycontainer div {
+                width: 17%;
+            }
+        }
+
+        @media screen and (max-width: 1220px) {
+            .mycontainer div {
+                width: 20%;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            .mycontainer div {
+                width: 25%;
+            }
+        }
+
+        @media screen and (max-width: 770px) {
+            .mycontainer div {
+                width: 33%;
+            }
+        }
+
+        @media screen and (max-width: 540px) {
+            .mycontainer div {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 370px) {
+            .mycontainer div {
+                width: 100%;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>HTML Div Element</h1>
+
+    <p>The <b>div</b> element is used as a container for other HTML elements.</p>
+
+    <h2>The Div Element</h2>
+    <p>The <b>div</b> element is by default a block element, meaning that it takes all available width, and comes with
+        line breaks before and after.</p>
+    <p>A <b>div</b> element takes up all available width:</p>
+    <p>Lorem Ipsum
+    <div class="div1">I am a div</div> dolor sit amet.</p>
+    <p>The <b>div</b> element has no required attributes, but style, class and id are common.</p>
+
+    <h2>Div as a container</h2>
+    <p>The <b>div</b> element is often used to group sections of a web page together.</p>
+    <h3>Example</h3>
+    <div class="div2">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+    </div>
+
+    <h2>Center align a Div element</h2>
+    <div class="div3">
+        <p>If you have a <b>div</b> element that is not 100% wide, and you want to center-align it, set the CSS margin
+            property to auto.</p>
+    </div>
+
+    <h2>Multiple <b>div</b> elements</h2>
+    <p>You can have many <b>div</b> containers on the same page.</p>
+
+    <div class="div4">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+    </div>
+
+    <div class="div11">
+        <h2>Oslo</h2>
+        <p>Oslo is the capital city of Norway.</p>
+        <p>Oslo has over 600.000 inhabitants.</p>
+    </div>
+
+    <div class="div12">
+        <h2>Rome</h2>
+        <p>Rome is the capital city of Italy.</p>
+        <p>Rome has almost 3 million inhabitants.</p>
+    </div>
+
+    <h2>Aligning <b>div</b> elements side by side</h2>
+    <p>When building web pages, you often want to have two or more <b>div</b> elements side by side, like this:</p>
+    <h3>Float</h3>
+    <p>The CSS float property was not originally meant to align
+    <div> elements side-by-side, but has been used for this purpose for many years.</p>
+        <p>The CSS float property is used for positioning and formatting content and allow elements float next to each
+            other instead of on top of each other.</p>
+
+
+        <div class="mycontainer">
+
+            <div style="background-color:#FFF4A3;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#FFC0C7;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+
+            <div style="background-color:#D9EEE1;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+            <!-- <div style="background-color:#FFF4A3;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#FFC0C7;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+
+            <div style="background-color:#D9EEE1;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+            <div style="background-color:#FFF4A3;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#FFC0C7;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+
+            <div style="background-color:#D9EEE1;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+            <div style="background-color:#FFF4A3;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#FFC0C7;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+
+            <div style="background-color:#D9EEE1;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+            </div> -->
+
+        </div>
+
+        <h2>Inline-block</h2>
+        <p>If you change the <b>div</b> element's display property from block to inline-block, the <b>div</b> elements
+            will no longer add a line break before and after, and will be displayed side by side instead of on top of
+            each other.</p>
+        <div class="div13">
+            <div style="background-color:#FFF4A3;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#FFC0C7;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+
+            <div style="background-color:#D9EEE1;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+        </div>
+
+        <h2>Flex</h2>
+        <p>The CSS Flexbox Layout Module was introduced to make it easier to design flexible responsive layout structure
+            without using float or positioning.</p>
+        <p>To make the CSS flex method work, surround the <b>div</b> elements with another <b>div</b> element and give
+            it the status as a flex container.</p>
+
+        <div class="mycontainer-2">
+
+            <div style="background-color:#FFF4A3;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#FFC0C7;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+
+            <div style="background-color:#D9EEE1;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+            <div style="background-color:#FFF4A3;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#FFC0C7;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+
+            <div style="background-color:#D9EEE1;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+            <div style="background-color:#FFF4A3;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#FFC0C7;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+
+            <div style="background-color:#D9EEE1;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+            <div style="background-color:#FFF4A3;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#FFC0C7;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+
+            <div style="background-color:#D9EEE1;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+
+        </div>
+
+        <h2>Grid</h2>
+        <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to
+            design web pages without having to use floats and positioning.</p>
+        <p>Sounds almost the same as flex, but has the ability to define more than one row and position each row
+            individually.</p>
+        <p>The CSS grid method requires that you surround the <b>div</b> elements with another <b>div</b> element and
+            give the status as a grid container, and you must specify the width of each column.</p>
+
+
+        <div class="mycontainer-grid">
+
+            <div style="background-color:#FFF4A3;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#FFC0C7;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+
+            <div style="background-color:#D9EEE1;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+            <div style="background-color:#FFF4A3;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#FFC0C7;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+
+            <div style="background-color:#D9EEE1;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+            <div style="background-color:#FFF4A3;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#FFC0C7;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+
+            <div style="background-color:#D9EEE1;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+            <div style="background-color:#FFF4A3;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#FFC0C7;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+
+            <div style="background-color:#D9EEE1;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+
+
+</body>
+
+</html>
