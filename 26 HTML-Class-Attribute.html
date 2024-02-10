@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML class Attribute</title>
+    <link rel="stylesheet" href="./26 HTML-Class-Attribute.css">
+</head>
+
+<body>
+    <h1>HTML class Attribute</h1>
+    <p>The HTML class attribute is used to specify a class for an HTML element. Multiple HTML elements can share the
+        same class.
+    </p>
+
+    <h2>Using The class Attribute</h2>
+    <p>The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript
+        to access and manipulate elements with the specific class name.</p>
+    <p>In the following example we have three <b>div</b> elements with a class attribute with the value of "city". All
+        of the three <b>div</b> elements will be styled equally according to the .city style definition in the head
+        section:</p>
+
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+    </div>
+
+    <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+    </div>
+
+    <div class="city">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+
+    <p>In the following example we have two <b>span</b> elements with a class attribute with the value of "note". Both
+        <b>span</b> elements will be styled equally according to the .note style definition in the head section:
+    </p>
+
+    <h1>My <span class="note">Important</span> Heading</h1>
+    <p>This is some <span class="note">important</span> text.</p>
+
+    <div class="syntax">
+        <h2>The Syntax For Class</h2>
+        <p>To create a class; write a period (.) character, followed by a class name. Then, define the CSS properties
+            within curly braces {}:</p>
+
+        <h2 class="city-2">London</h2>
+        <p>London is the capital of England.</p>
+
+        <h2 class="city-2">Paris</h2>
+        <p>Paris is the capital of France.</p>
+
+        <h2 class="city-2">Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <div class="multiple">
+        <h2>Multiple Classes</h2>
+        <p>HTML elements can belong to more than one class. <br> To define multiple classes, separate the class names
+            with a space, e.g. <b>div class="city main"</b>. The element will be styled according to all the classes
+            specified. <br> In the following example, the first <b>h2</b> element belongs to both the city class and
+            also to the main class, and will get the CSS styles from both of the classes: </p>
+    </div>
+    <h2 class="city-main">London</h2>
+    <h2 class="city-3">Paris</h2>
+    <h2 class="city-3">Tokyo</h2>
+
+    <div class="same-class">
+        <h2>Different Elements Can Share Same Class</h2>
+        <p>Different HTML elements can point to the same class name. <br> In the following example, both <b>h2</b> and
+            <b>p</b> point to the "city" class and will share the same style:
+        </p>
+    </div>
+    <h2 class="city-4">Paris</h2>
+    <p class="city-4">Paris is the capital of France</p>
+
+    <div class="javascript">
+        <h2>Use of The class Attribute in JavaScript</h2>
+        <p>Click the button to hide all elements with class name "city":</p>
+
+        <button onclick="hideHeadings()">Hide Headings</button>
+        <button onclick="showHeadings()">Show Headings</button>
+
+        <h2 class="city-7">London</h2>
+        <p>London is the capital of England.</p>
+
+        <h2 class="city-7">Paris</h2>
+        <p>Paris is the capital of France.</p>
+
+        <h2 class="city-7">Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <script>
+        function hideHeadings() {
+            var x = document.getElementsByClassName("city-7");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+
+        function showHeadings() {
+            var x = document.getElementsByClassName("city-7");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
