@@ -1,0 +1,88 @@
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 24%;
+}
+
+h1 {
+    color: white;
+    background-color: rgb(50, 50, 206);
+    font-size: 40px;
+    margin: 2px 0 10px 2px;
+    padding: 0 4px;
+    width: fit-content;
+}
+
+h2 {
+    color: white;
+    background-color: rgb(50, 50, 206);
+    margin: 2px 0 10px 2px;
+    padding: 0 4px;
+    width: fit-content;
+    font-size: 28px;
+}
+
+p {
+    color: #242c27;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+/* Style the element with the id "myHeader" */
+#myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Style all elements with the class name "city" */
+.city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+}
+
+ul {
+    font-size: 22px;
+    list-style: none;
+    display: flex;
+    padding: 4px;
+    margin: 0 0px;
+    background-color: tom;
+}
+
+li {
+    padding: 2px 4px;
+    margin: 0 4px 10px 4px;
+    background-color: tomato;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+li:hover {
+    background-color: rgb(149, 57, 41);
+}
+
+button {
+    height: 70px;
+    width: auto;
+    font-size: 32px;
+    cursor: pointer;
+    background-color: tomato;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 0 4px;
+    margin: 0 0 20px 0;
+}
+
+button:hover {
+    background-color:rgb(113, 42, 30);
+}

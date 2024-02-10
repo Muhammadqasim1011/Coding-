@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./27 HTML-id-Attribute.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 24%;
+        }
+
+        h1 {
+            color: white;
+            background-color: rgb(50, 50, 206);
+            font-size: 40px;
+            margin: 2px 0 10px 2px;
+            padding: 0 4px;
+            width: fit-content;
+        }
+
+        h2 {
+            color: white;
+            background-color: rgb(50, 50, 206);
+            margin: 2px 0 10px 2px;
+            padding: 0 4px;
+            width: fit-content;
+            font-size: 28px;
+        }
+
+        p {
+            color: #242c27;
+            font-size: 23px;
+            font-weight: 500;
+            line-height: 34px;
+        }
+
+        /* Style the element with the id "myHeader" */
+        #myHeader {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Style all elements with the class name "city" */
+        .city {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+        }
+
+        ul {
+            font-size: 22px;
+            list-style: none;
+            display: flex;
+            padding: 4px;
+            margin: 0 0px;
+            background-color: tom;
+        }
+
+        li {
+            padding: 2px 4px;
+            margin: 0 4px 10px 4px;
+            background-color: tomato;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+
+        }
+
+        li:hover {
+            background-color: rgb(149, 57, 41);
+        }
+
+        button {
+            height: 70px;
+            width: auto;
+            font-size: 32px;
+            cursor: pointer;
+            background-color: tomato;
+            color: white;
+            font-weight: 600;
+            border: none;
+            padding: 0 4px;
+            margin: 0 0 20px 0;
+        }
+
+        button:hover {
+            background-color: rgb(113, 42, 30);
+        }
+
+        #quote {
+            font-weight: 200;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 2rem;
+            background-color: #242c27;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#nav">Jump to Navigation</a></li>
+        <li><a href="#top">Jump to Top</a></li>
+    </ul>
+    <h1 id="top">HTML id Attribute</h1>
+    <p>The HTML id attribute is used to specify a unique id for an HTML element. <br>You cannot have more than one
+        element with the same id in an HTML document.</p>
+
+    <h2>Using The id Attribute</h2>
+    <p>The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within
+        the HTML document. <br>The id attribute is used to point to a specific style declaration in a style sheet. It is
+        also used by JavaScript to access and manipulate the element with the specific id. <br>The syntax for id is:
+        write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.
+        <br>In the following example we have an <b>h1</b> element that points to the id name "myHeader". This <b>h1</b>
+        element will be styled according to the #myHeader style definition in the head section:
+    </p>
+
+    <h2>The id Attribute</h2>
+    <p>Use CSS to style an element with the id "myHeader":</p>
+    <h1 id="myHeader">My Header</h1>
+
+    <h2>Difference Between Class and ID</h2>
+    <p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within
+        the page:</p>
+
+    <!-- An element with a unique id -->
+    <h1 id="myHeader">My Cities</h1>
+
+    <!-- Multiple elements with same class -->
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+
+    <h2>HTML Bookmarks with ID and Links</h2>
+    <p>HTML bookmarks are used to allow readers to jump to specific parts of a webpage. <br>Bookmarks can be useful if
+        your page is very long. <br>To use a bookmark, you must first create it, and then add a link to it. <br> Then,
+        when the link is clicked, the page will scroll to the location with the bookmark.</p>
+
+    <ul>
+        <li id="nav"><a href="#C4">Jump to Chapter 4</a></li>
+        <li><a href="#C10">Jump to Chapter 10</a></li>
+        <li><a href="#C23">Jump to Chapter 23</a></li>
+    </ul>
+    <!-- <p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C10">Jump to Chapter 10</a></p> -->
+
+    <h2>Chapter 1</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 2</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 3</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2 id="C4">Chapter 4</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 5</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 6</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 7</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 8</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 9</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2 id="C10">Chapter 10</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 11</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 12</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 13</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 14</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 15</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 16</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 17</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 18</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 19</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 20</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 21</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 22</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2 id="C23">Chapter 23</h2>
+    <p>This chapter explains ba bla bla</p>
+    <ul>
+        <li><a href="#nav">Jump to Navigation</a></li>
+        <li><a href="#top">Jump to Top</a></li>
+    </ul>
+
+    <h2>Using The id Attribute in JavaScript</h2>
+    <p>The id attribute can also be used by JavaScript to perform some tasks for that specific element.</p>
+    <p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+    <h2>Random Quran Ayats</h2>
+    <p>Click the button to display a random quote:</p>
+    <button onclick="displayRandomQuote()">Random Quran Ayats</button>
+    <h1 id="quote"></h1>
+
+    <script>
+        function displayRandomQuote() {
+            var quotes = [
+                "Allah does not burden a soul beyond that it can bear. (Quran 2:286)",
+                "And He found you lost and guided [you]. (Quran 93:7)",
+                "So remember Me; I will remember you. (Quran 2:152)",
+                "And whosoever fears Allah and keeps his duty to Him, He will make a way for him to get out (from every difficulty). (Quran 65:2)",
+                "And He provides for him from (sources) he never could imagine. And if anyone puts his trust in Allah, sufficient is (Allah) for him. For Allah will surely accomplish his purpose: verily, for all things has Allah appointed a due proportion. (Quran 65:3)",
+                "And be patient. Indeed, Allah is with the patient. (Quran 8:46)",
+                "And whoever relies upon Allah - then He is sufficient for him. (Quran 65:3)",
+                "Allah is with those who are patient. (Quran 2:153)",
+                "And if you should count the favors of Allah, you could not enumerate them. Indeed, Allah is Forgiving and Merciful. (Quran 16:18)",
+                "And never say of anything, 'Indeed, I will do that tomorrow,' Except [when adding], 'If Allah wills.' And remember your Lord when you forget [it] and say, 'Perhaps my Lord will guide me to what is nearer than this to right conduct.' (Quran 18:23-24)",
+                "Indeed, Allah loves those who are constantly repentant and loves those who purify themselves. (Quran 2:222)",
+                "Indeed, Allah will not change the condition of a people until they change what is in themselves. (Quran 13:11)",
+                "And He is with you wherever you are. (Quran 57:4)",
+                "Indeed, with hardship, there is relief. (Quran 94:6)",
+                "Is not Allah sufficient for His Servant? (Quran 39:36)",
+                "And put your trust in Allah if you are believers indeed. (Quran 5:23)",
+                "And whoever puts all his trust in Allah (SWT), then He will suffice him. (Quran 65:3)",
+                "O you who have believed, seek help through patience and prayer. Indeed, Allah is with the patient. (Quran 2:153)",
+                "Allah is the ally of those who believe. He brings them out from darknesses into the light. (Quran 2:257)",
+                "And seek help through patience and prayer, and indeed, it is difficult except for the humbly submissive [to Allah]. (Quran 2:45)",
+                "And your Lord is going to give you, and you will be satisfied. (Quran 93:5)",
+                "Indeed, Allah is with the patient. (Quran 8:46)",
+                "Indeed, with hardship [will be] ease. (Quran 94:5)",
+                "But perhaps you hate a thing and it is good for you; and perhaps you love a thing and it is bad for you. And Allah Knows, while you know not.",
+                "The best among you are those who have the best manners and character. (Hadith)",
+                "Do not lose hope, nor be sad. (Quran 3:139)",
+                "Indeed, with every hardship comes ease. (Quran 94:6)",
+                "Allah is with those who restrain themselves. (Quran 16:128)",
+                "Kindness is a mark of faith, and whoever is not kind has no faith. (Hadith)",
+                "The most beloved deed to Allah is the most regular and constant even though it were little. (Hadith)",
+                "Speak good or remain silent. (Hadith)",
+                "Do not backbite one another. (Quran 49:12)",
+                "The cure for ignorance is to question. (Hadith)",
+                "The strong person is not the one who can wrestle someone else down. The strong person is the one who can control himself when he is angry. (Hadith)",
+                "He who is not grateful to people is not grateful to Allah. (Hadith)",
+                "The best charity is that given in Ramadan. (Hadith)",
+                "A believer does not taunt, curse, abuse or talk indecently. (Hadith)",
+                "The seeking of knowledge is obligatory for every Muslim. (Hadith)",
+                "The most perfect in faith amongst believers is he who is best in manners and kindest to his wife. (Hadith)",
+                "Allah has revealed to me, 'You should show courtesy and be cordial with each other, so that nobody should consider himself superior to another nor do him harm. (Hadith)",
+                "Whoever treads a path in search of knowledge, Allah will make easy for him the path to Paradise. (Hadith)",
+                "Allah is beautiful and He loves beauty. (Hadith)",
+                "Take benefit of five before five: Your youth before your old age, your health before your sickness, your wealth before your poverty, your free time before you are preoccupied, and your life before your death. (Hadith)",
+                "None of you truly believes until he wishes for his brother what he wishes for himself. (Hadith)",
+                "The most beloved of people to Allah are those who are most beneficial to people. (Hadith)",
+                "The Prophet Muhammad (peace be upon him) said: 'I have been sent to perfect good character.' (Hadith)",
+                "Give charity without delay, for it stands in the way of calamity. (Hadith)",
+                "Whoever removes a worldly grief from a believer, Allah will remove from him one of the griefs of the Day of Judgment. (Hadith)",
+                "Do not grieve. Indeed, Allah is with us. (Quran 9:40)",
+                "Call upon Me; I will respond to you. (Quran 40:60)",
+                "Do not be afraid; I am with you both; I hear and see. (Quran 20:46)",
+                "For indeed, with hardship [will be] ease. (Quran 94:5)",
+                "So remember Me; I will remember you. (Quran 2:152)",
+                "And whoever relies upon Allah - then He is sufficient for him. (Quran 65:3)",
+                "And He found you lost and guided [you]. (Quran 93:7)",
+                "And your Lord is going to give you, and you will be satisfied. (Quran 93:5)",
+                "And He is with you wherever you are. (Quran 57:4)",
+                "And put your trust in Allah if you are believers indeed. (Quran 5:23)",
+                "Indeed, with hardship [will be] ease. (Quran 94:5)",
+                "Indeed, Allah loves those who are constantly repentant and loves those who purify themselves. (Quran 2:222)",
+                "Indeed, Allah will not change the condition of a people until they change what is in themselves. (Quran 13:11)",
+                "Is not Allah sufficient for His Servant? (Quran 39:36)",
+                "But perhaps you hate a thing and it is good for you; and perhaps you love a thing and it is bad for you. And Allah Knows, while you know not."
+
+
+            ];
+
+            var randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById("quote").innerHTML = quotes[randomIndex];
+        }
+    </script>
+
+</body>
+
+</html>
