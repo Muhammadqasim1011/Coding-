@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Iframes</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>HTML Iframes</h1>
+    <p>An HTML is used to display a web page with in a webpage.</p>
+
+    <h2>HTML Iframe Syntex</h2>
+    <p>The HTML <b>iframe</b> tag specifies an inline frame. <br><br> An inline frame is used to embed another document
+        within the current HTML document.</p>
+    <b><iframe src="#" title="description" iframe></iframe></b>
+    <p><b>Tip:</b> It is a good practice to always include a title attribute for the <b>iframe</b>. This is used by
+        screen readers to read out what the content of the iframe is.</p>
+
+    <h2>Iframe - Set Height and Width</h2>
+    <p>Use the height and width attributes to specify the size of the iframe.<br><br>The height and width are specified
+        in pixels by default:</p>
+    <iframe src="/26 HTML-Class-Attribute.html" height="700px" width="499px" title="Iframe Example"></iframe>
+    <p>Or you can add the style attribute and use the CSS height and width properties:</p>
+    <iframe src="/19 HTML-Table-Styling.html" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+
+    <h2>Iframe - Remove the Border</h2>
+    <p>By default, an iframe has a border around it.
+        <br><br>
+        To remove the border, add the style attribute and use the CSS border property:
+    </p>
+    <iframe src="/2 HTML styles.html" style="border:none;" title="Iframe Example"></iframe>
+    <p>With CSS, you can also change the size, style and color of the iframe's border:</p>
+    <iframe src="/14 HTML-HTML-Table-Borders.html" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+    <h2>Iframe - Target for a Link</h2>
+    <p>An iframe can be used as the target frame for a link.
+        <br><br>
+        The target attribute of the link must refer to the name attribute of the iframe:
+    </p>
+    <iframe src="demo_iframe.htm" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+    <p><a href="https://www.youtube.com/" target="iframe_a">W3Schools.com</a></p>
+
+
+    <iframe src="" frameborder="0"></iframe>
+
+</body>
+
+</html>
