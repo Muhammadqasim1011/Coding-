@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* background: linear-gradient(lightblue,blue); */
+            background: rgb(215, 239, 247);
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            font-family: Arial;
+        }
+
+        h1 {
+            font-size: 70px;
+            color: rgb(2, 2, 121);
+            background: linear-gradient(1800deg, #92a6ff, white, white, white, #92a6ff);
+            margin: 0 0 30px;
+            padding: 24px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+        }
+
+        form {
+            width: 70%;
+            background: #ffffff;
+            margin: auto;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .text1 input {
+            display: flex;
+            flex-direction: column;
+            margin: 20px auto;
+            width: 90%;
+            border: none;
+            background: rgb(226, 226, 226);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .selectio1 {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            margin: 10px 3%;
+            padding: 10px;
+        }
+
+        .selectio1 #fields {
+            padding: 10px;
+            background: rgb(2, 10, 122);
+            color: white;
+            font-weight: 600;
+            border-radius: 17px;
+        }
+
+        .selectio1 .new1:hover {
+            background: rgb(5, 20, 240);
+        }
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-group input[type="radio"] {
+            margin: 0 20px;
+            /* Adjust margin as needed */
+        }
+
+        .range1 {
+            width: 90%;
+            float: right;
+        }
+
+        .range1 label {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            margin: 3px;
+
+        }
+
+        .range1 input {
+            display: flex;
+            width: 40%;
+            text-align: center;
+        }
+
+        input {
+            cursor: pointer;
+        }
+
+        .btn {
+            /* position: relative; */
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+        }
+
+        .sub {
+            width: 80px;
+            height: 49px;
+            color: #ffffff;
+            background: rgb(2, 10, 122);
+            border: 2px solid black;
+            border-radius: 17px;
+            margin: 10px 0;
+        }
+
+
+        @media (min-width:901px) {
+            .radio-group input[type="radio"] {
+                margin: 0 40px;
+                /* Adjust margin as needed */
+            }
+        }
+
+        @media (max-width:700px) {
+            .radio-group input[type="radio"] {
+                margin: 0 10px;
+                /* Adjust margin as needed */
+            }
+        }
+
+        @media (max-width:600px) {
+            .radio-group input[type="radio"] {
+                margin: 4px;
+                /* Adjust margin as needed */
+            }
+        }
+
+        @media (max-width:580px) {
+
+            body{
+                height: 100vh;
+            }
+            .selectio1 {
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+                margin-top: 0;
+            }
+
+            .radio-group {
+                margin-top: 30px;
+            }
+
+            .range1 {
+                float: inline-start;
+            }
+
+            .range1 input {
+                width: 80%;
+            }
+
+            h1 {
+                font-size: 44px;
+                padding: 10px 0 0 0;
+                position: sticky;
+                top: 0;
+                width: 100%;
+                background: linear-gradient(1800deg,white, white, white, #92a6ff);
+            
+            }
+
+            .sub {
+                display: block;
+                margin: 20px 0;
+            }
+
+            .btn {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px 0 0 0;
+
+            }
+
+            .file1 {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My First form</h1>
+    <form action="" method="post" class="form1">
+        <div class="text1">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your email">
+            <input type="password" placeholder="Your password">
+            <input type="tel" placeholder="Your Phone Number">
+        </div>
+        <div class="selectio1">
+            <div class="select-wrapper">
+                <select name="Fields" id="fields" onclick="changeColor()">
+                    <div class="new1">
+                        <option value="Physics">Physics</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Robotics">Robotics</option>
+                        <option value="Programming">Programming</option>
+                        <option value="Biology">Biology</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="Islamiyat">Islamiyat</option>
+                        <option value="Social Study">Social Study</option>
+                    </div>
+                </select>
+            </div>
+
+            <div class="radio-group">
+                <input type="radio" name="Fresh" value="Fresh" id="fresh1">
+                <label for="fresh1">Fresh</label>
+                <input type="radio" name="Fresh" value="Regular" id="regular1">
+                <label for="regular1">Regular</label>
+                <input type="radio" name="Fresh" value="Old" id="old1">
+                <label for="old1">Old</label>
+            </div>
+        </div>
+
+
+
+        <div class="range1">
+            <label for=".range2">Maths</label>
+            <input type="range" class="range2">
+            <label for=".range3">Statistics</label>
+            <input type="range" class="range3">
+            <label for=".range4">Ethics</label>
+            <input type="range" class="range4">
+        </div>
+
+        <div class="btn">
+
+            <input type="file" class="file1">
+            <input type="submit" class="sub">
+        </div>
+
+    </form>
+    <script>
+        function changeColor() {
+            var selectElement = document.getElementById("fields");
+            var selectedOption = selectElement.options[selectElement.selectedIndex];
+
+            // Resetting styles for all options
+            for (var i = 0; i < selectElement.options.length; i++) {
+                selectElement.options[i].style.color = "";
+                selectElement.options[i].style.backgroundColor = "";
+            }
+
+            // Applying styles only to the selected option
+            selectedOption.style.color = "rgb(2, 10, 122)";
+            selectedOption.style.backgroundColor = "white";
+        }
+    </script>
+</body>
+
+</html>

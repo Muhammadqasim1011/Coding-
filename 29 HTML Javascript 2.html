@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 24%;
+        }
+
+        h1 {
+            color: white;
+            background-color: rgb(50, 50, 206);
+            font-size: 40px;
+            margin: 2px 0 10px 2px;
+            padding: 0 4px;
+            width: fit-content;
+            border-radius: 14px
+        }
+
+        h2 {
+            color: white;
+            background-color: rgb(50, 50, 206);
+            margin: 2px 0 10px 2px;
+            padding: 0 4px;
+            width: fit-content;
+            font-size: 28px;
+            border-radius: 10px
+        }
+
+        button {
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+            border-bottom: 1.4px solid rgb(122, 121, 121);
+            border-right: 1.4px solid rgb(129, 129, 129);
+            color: rgb(104, 73, 73);
+            background-color: transparent;
+            font-size: 20px;
+            margin: 2px 0 10px 2px;
+            padding: 2px 4px;
+            width: fit-content;
+            border-radius: 14px;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            border: 2px solid orangered;
+        }
+
+        p {
+            color: #242c27;
+            font-size: 23px;
+            font-weight: 500;
+            line-height: 34px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML JavaScript</h1>
+    <p>JavaScript makes HTML pages more dynamic and interactive.</p>
+
+    <h1>My First JavaScript</h1>
+    <!-- Display Time and Date -->
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+
+
+    <h2>The HTML <b>script</b> Tag</h2>
+    <p>
+        The HTML <b>script</b> tag is used to define a client-side script (JavaScript).
+        <br><br>
+        The <b>script</b> element either contains script statements, or it points to an external script file through the
+        src attribute.
+        <br><br>
+        Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+        <br><br>
+        To select an HTML element, JavaScript most often uses the document.getElementById() method.
+        <br><br>
+        This JavaScript example writes "Hello JavaScript!" into an HTML element with id="demo":
+    </p>
+
+    <h2>Use JavaScript to Change Text</h2>
+    <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+
+    <p id="change-text"></p>
+
+
+    <h1>change the content</h1>
+
+    <p id="para">JavaScript can change the content of an HTML element:</p>
+    <button type="button" onclick="paraa()">click Me</button> <br><br>
+
+    <button type="button" onclick="myFunction11()">Click Me!!!</button>
+
+    <p id="change">This is a demonstration.</p>
+
+
+    <h1>MY Exapmle</h1>
+    <button type="button" onclick="function1()">My example</button>
+
+    <p id="example1">Hello</p>
+
+
+    <h1>my Example 2</h1>
+    <button type="button" onclick="function2()">Content</button>
+    <p id="example2">How are you?</p>
+
+
+    <h1>Change the style</h1>
+
+    <p id="style1">JavaScript can change the style of an HTML element.</p>
+
+    <button type="button" onclick="myFunction2()">Change Style</button>
+
+
+
+    <h2>The HTML <b>noscript</b> Tag</h2>
+    <p>The HTML <b>noscript</b> tag defines an alternate content to be displayed to users that have disabled scripts in
+        their browser or have a browser that doesn't support scripts:</p>
+
+    <script>
+
+        document.getElementById("change-text").innerHTML = "Hello JavaScript!, how are you.";
+
+        function paraa() {
+            document.getElementById("para").innerHTML = "JavaScript makes HTML pages more dynamic and interactive."
+        }
+
+        function myFunction11() {
+            document.getElementById("change").innerHTML = "Hello JavaScript!";
+        }
+        function function1() {
+            document.getElementById("example1").innerHTML = "Aslamulaikum";
+        }
+
+        function function2() {
+            document.getElementById("example2").innerHTML = "I am fine and You.."
+        }
+
+
+        function myFunction2() {
+            document.getElementById("style1").style.fontSize = "25px";
+            document.getElementById("style1").style.color = "red";
+            document.getElementById("style1").style.backgroundColor = "yellow";
+        }
+
+    </script>
+
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+</body>
+
+</html>

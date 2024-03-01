@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    body{
+        font-size: medium;
+        font-family: sans-serif;
+        margin: 1px 3px;
+        
+
+    }
+    h1,h2{
+        font-size: medium;
+    }
+
+    @media(min-width:1700px) {
+        body{
+        font-size: 1.3vw;
+    }
+    h1{
+        font-size: 2.4vw;
+    }
+    h2 {
+        font-size:2vw;
+    }
+    }
+
+
+
+    @media(max-width:1700px) {
+        body{
+        font-size: 1.8vw;
+    }
+    h1{
+        font-size: 3vw;
+    }
+    h2 {
+        font-size:2.4vw;
+    }
+    }
+
+
+    @media(max-width:1300px) {
+        body{
+        font-size: 2vw;
+    }
+    h1{
+        font-size: 4vw;
+    }
+    h2 {
+        font-size:3vw;
+    }
+    }
+
+
+    @media(max-width:900px) {
+        body{
+        font-size: 3vw;
+    }
+    h1{
+        font-size: 5vw;
+    }
+    h2 {
+        font-size:4vw;
+    }
+    }
+
+    @media(max-width:600px) {
+        body{
+        font-size: 3.7vw;
+    }
+    h1{
+        font-size: 6.5vw;
+    }
+    h2 {
+        font-size:5vw;
+    }
+    }
+</style>
+<body>
+    <h1>HTML Responsive Web Design</h1>
+    <p>Responsive web design is about creating web pages that look good on all devices!
+        <br><br>
+        A responsive web design will automatically adjust for different screen sizes and viewports.
+    <h2>What is Responsive Web Design?</h2>
+    Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to
+    make it look good on all devices (desktops, tablets, and phones):
+    </p>
+    <p>To create a responsive website, add the following <b>meta</b> tag to all your web pages: <br><br>
+        <<b>meta name="viewport" content="width=device-width, initial-scale=1.0"</b>> <br><br>
+            This will set the viewport of your page, which will give the browser instructions on how to control the
+            page's dimensions and scaling.
+    </p>
+
+    <h2>Responsive Image</h2>
+    <p>Responsive images are images that scale nicely to fit any browser size.
+    <h2>Using the width Property</h2>
+    If the CSS width property is set to 100%, the image will be responsive and scale up and down: <br><br>
+    When the CSS width property is set in a percentage value, the image will scale up and down when resizing the
+    browser window. Resize the browser window to see the effect.</p>
+
+    <img src="img_girl.jpg" style="width:100%;">
+    <img src="img_girl.jpg" style="max-width:100%;height:auto;">
+
+    <h2>Show Different Images Depending on Browser Width</h2>
+    <p>Resize the browser width and the image will change at 600px and 1500px.</p>
+
+    <picture>
+        <source srcset="img_girl.jpg" media="(max-width: 600px)">
+        <source srcset="download (5).jpg" media="(max-width: 1500px)">
+        <source srcset="flowers.jpg">
+        <img src="download.jpg" alt="Flowers" style="width:auto;">
+
+    </picture>
+
+    <h2>Responsive Text Size</h2>
+    <p> The text size can be set with a "vw" unit, which means the "viewport width".
+        <br><br>That way the text size will follow the size of the browser window:
+
+    <h1>Responsive Text</h1>
+
+    <p>Resize the browser window to see how the text size scales.</p>
+
+    <p>Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport
+        width.</p>
+
+    <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+
+    </p>
+</body>
+
+</html>

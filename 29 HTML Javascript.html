@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML JavaScript</title>
+    <style>
+        body {
+
+
+            font-family: sans-serif;
+
+
+        }
+
+        input {
+            padding: 4px;
+            width: 40%;
+            height: 20px;
+            margin: auto;
+            border-radius: 20px;
+            border: 2px solid gray;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        button {
+            padding: 10px;
+            width: 70%;
+            font-size: 1.2rem;
+            margin: 10px auto;
+            border-radius: 20px;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button:hover {
+            background: rgb(175, 175, 175);
+        }
+
+        button:focus {
+            border: 2px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML JavaScript</h1>
+    <p>JavaScript makes HTML pages more dynamic and interative</p>
+
+    <h1>My First JavaScript</h1>
+    <!-- Example 1: Display Date and Time-->
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+
+
+    <!-- Example 1: Display a greeting message -->
+    <button type="button" onclick="document.getElementById('greeting').innerHTML = 'Hello, World!'">
+        Click me to display a greeting message.
+    </button>
+    <p id="greeting"></p>
+
+    <!-- Example 2: Toggle visibility of an element -->
+    <button type="button"
+        onclick="document.getElementById('toggle').style.display = (document.getElementById('toggle').style.display == 'none') ? 'block' : 'none'">
+        Click me to toggle visibility.
+    </button>
+    <div id="toggle" style="display: none;">
+        This content can be toggled.
+    </div>
+
+    <!-- Example 3: Increase font size -->
+    <button type="button" onclick="document.getElementById('text').style.fontSize = 'larger'">
+        Click me to increase font size.
+    </button>
+    <p id="text">This text will increase in font size.</p>
+
+    <!-- Example 4: Change background color -->
+    <button type="button" onclick="changeBackgroundColorRandom()">
+        Click me to change background color randomly.
+    </button>
+
+    <button type="button" onclick="setLinearGradient()">
+        Click me to set a linear gradient background.
+    </button>
+
+
+
+
+    <!-- Example 5: Clear input field -->
+    <input type="text" id="inputField" value="Type something...">
+    <button type="button" onclick="document.getElementById('inputField').value = ''">
+        Click me to clear the input field.
+    </button>
+
+    <!-- Example 6: Alert message -->
+    <button type="button" onclick="alert('This is an alert message.')">
+        Click me to display an alert message.
+    </button>
+
+    <!-- Example 7: Play audio -->
+    <audio id="audio" src="/001 - Al-Fatiha.mp3"></audio>
+    <button type="button" onclick="document.getElementById('audio').play()">
+        Click me to play audio.
+    </button>
+
+    <!-- Example 8: Scroll to top of the page -->
+    <button type="button" onclick="window.scrollTo(0, 0)">
+        Click me to scroll to the top of the page.
+    </button>
+
+    <!-- Example 9: Open a new window -->
+    <button type="button" onclick="window.open('https://www.google.com', '_blank')">
+        Click me to open a new window.
+    </button>
+
+    <script>
+        function changeBackgroundColorRandom() {
+            // Generate random RGB values for the background color
+            var randomRed = Math.floor(Math.random() * 256);
+            var randomGreen = Math.floor(Math.random() * 256);
+            var randomBlue = Math.floor(Math.random() * 256);
+
+            // Set the background color to the generated RGB values
+            document.body.style.background = `rgb(${randomRed}, ${randomGreen}, ${randomBlue})`;
+        }
+
+        function setLinearGradient() {
+            // Generate random colors for the gradient
+            var colors = ['#' + Math.floor(Math.random() * 16777215).toString(16), '#' + Math.floor(Math.random() * 16777215).toString(16)];
+
+            // Set linear gradient background with random colors
+            document.body.style.background = `linear-gradient(to bottom, ${colors[0]}, ${colors[1]})`;
+
+        }
+       
+    </script>
+
+
+
+
+</body>
+
+</html>
