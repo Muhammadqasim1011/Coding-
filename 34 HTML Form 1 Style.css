@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg, lightpink, lightblue);
+    display: flex;
+    /* height: 100vh;
+    align-items: center; */
+    justify-content: center;
+}
+
+.container{
+    width: 499px;
+    background-color: white;
+    padding: 40px;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(184, 134, 250);
+    margin: 0 0 10px ;
+}
+.container p{
+    text-align: center;
+    font-size: 18px;
+}
+
+.form-items{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+label{
+    font-weight: 600;
+}
+
+.form-items input,textarea{
+    background: rgba(240, 239, 239, 0.671);
+    margin: 10px 0 0 0;
+    padding: 8px;
+    border: none;
+    resize: none;
+    border-radius: 14px;
+    font-size: 18px;
+}
+
+.Student input:last-child{
+    margin: 13px 0 0 0;
+}
+
+.selectss{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.selectss select{
+    width: 180px;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 17px;
+    background-color: rgba(240, 239, 239, 0.925);
+    border: none;
+    border-radius: 9px;
+}
+
+.radio{
+    flex-direction: row;
+    /* padding: 10px; */
+}
+.radio input{
+    margin: 0 2px 0 13px;
+    font-size: 17px;
+
+}
+
+.img input{
+    width: fit-content;
+
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn input{
+    border: none;
+    color: white;
+    background: orangered;
+    font-size: 17px;
+    font-weight: 600;
+    width: 80px;
+    height: 30px;
+    border-radius: 12px;
+    transition: all .4s ease;
+}
+
+.btn input:hover{
+    background: rgb(184, 134, 250);
+}
+
+@media screen (max-width:740) {
+    .img input{
+        width: 100%;
+     }   
+}

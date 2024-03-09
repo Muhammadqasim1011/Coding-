@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The HTML Form Elements</title>
+</head>
+
+<body>
+    <h1>The HTML Form Elements</h1>
+
+    <h2>Input Element</h2>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname">
+
+    <h2>Label Element</h2>
+    <p>The label element defines a label for several form elements. <br>
+
+        The label element is useful for screen-reader users, because the screen-reader will read out loud the label when
+        the user focus on the input element. <br>
+
+        The label element also help users who have difficulty clicking on very small regions (such as radio buttons or
+        checkboxes) - because when the user clicks the text within the label element, it toggles the radio button /
+        checkbox. <br>
+
+        The for attribute of the label tag should be equal to the id attribute of the input element to bind them
+        together.
+
+    </p>
+
+    <h2>Select Element</h2>
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+
+    <h3>Visible Values in Select</h3>
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars" size="2">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+
+    <h3>Allow Multiple Selections: in Select</h3>
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars" size="3" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+
+    <h2>Textarea Element</h2>
+    <textarea name="message" rows="4" cols="70">The cat was playing in the garden.</textarea>
+
+    <h2>Button Element</h2>
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+    <h2>Fieldset and Legend Elements</h2>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <h2>Datalist Element</h2>
+    <form action="/action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </form>
+
+    <h2>Output Element</h2>
+    <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

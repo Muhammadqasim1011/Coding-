@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Registration Form</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem maxime, asperiores.</p>
+        <div>
+            <form action="" method="post">
+                <div class="form-items Student">
+                    <label for="fname">Student Name</label>
+                    <input type="text"  name="fname" placeholder="First Name">
+                    <input type="text"  name="fname" placeholder="Last Name">
+                </div>
+                
+                <div class="form-items">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+                </div>
+                
+                <div class="form-items">
+                    <label for="phone">Phone</label>
+                    <input type="number" id="phone" name="phone" placeholder="Phone">
+                </div>
+                <div class="form-items dob">
+                    <label for="dob">Date Of Birth</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                
+                <div class="form-items">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address" rows="2" placeholder="Your Address"></textarea>
+                </div>
+                
+                <div class="form-items selectss">
+                    <label for="select-country">Nationality</label>
+                    <select id="select-country">
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Germeny">Germeny</option>
+                        <option value="India">India</option>
+                        <option value="Iran">Iran</option>
+                        <option value="Pakistan" selected>Pakistan</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="UAE">UAE</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </div>
+                    <div class="form-items selectss">
+                        <label for="select-cousre">Select Course</label>
+                        <select id="select-cousre">
+                            <option value="Data-Science">Data-Science</option>
+                            <option value="Physcis">Physcis</option>
+                            <option value="Biology">Biology</option>
+                            <option value="Chemistry">Chemistry</option>
+                            <option value="Maths">Maths</option>
+                            <option value="Computer-Science">Computer-Science</option>
+                            <option value="Web Development" selected>Web Development</option>
+                            <option value="Python">Python</option>
+                            <option value="Database">Database</option>
+                        </select>
+                    </div>
+                    <div class="form-items radio">
+                        <label for="address">Disability :</label>
+                        <input type="radio" value="yes" name="disability" placeholder="yes">Yes
+                        <input type="radio" value="no" name="disability" checked>NO
+                        <input type="radio" value="Not to say" name="disability">Not to say
+                    </div>
+                    
+                    <div class="form-items img">
+                        <label for="myimage">Upload Your Image :</label>
+                        <input type="file" name="myimage" id="myimage">
+                    </div>
+                    <div class="btn">
+                        <input type="reset" value="Clear">
+                        <input type="submit" value="Register">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
